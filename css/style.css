@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -63,7 +64,7 @@ a {
 .nav-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #menu {
@@ -74,13 +75,17 @@ a {
 
 #menu a {
     color: #090021;
-    text-decoration: none;
+    padding-top: 14px;
+}
+
+#menu a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .logo-Booki {
     height: 19px;
-    top: 30px;
-    left: 50px;
+    padding: 20px 0px 22px 0px;
 }
 
 /****** Hebergements And Populaires ***********/
