@@ -58,6 +58,31 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 68px;
+}
+
+#menu a {
+    color: #090021;
+    text-decoration: none;
+}
+
+.logo-Booki {
+    height: 19px;
+    top: 30px;
+    left: 50px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
