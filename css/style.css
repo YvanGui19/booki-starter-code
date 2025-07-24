@@ -1,5 +1,5 @@
 /****** General ***********/
-* {
+* { 
     font-family: 'Raleway', sans-serif;
 }
 
@@ -13,10 +13,13 @@
     color: var(--main-color);
 }
 
+html, body, h1, p {
+    margin: 0;
+}
+
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
 }
 
 .main-container {
@@ -61,6 +64,7 @@ a {
 
 /****** Header ***********/
 
+/** NAV **/
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -87,6 +91,58 @@ a {
     height: 19px;
     padding: 20px 0px 22px 0px;
 }
+
+/** RECHERCHE **/
+
+.container-recherche {
+    margin: 40px 0px;
+}
+
+.soustitre-principal {
+    margin-top: 10px;
+}
+
+.form-recherche {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.icone-pin i {
+    background-color: #F2F2F2;
+    padding: 15px 18px;
+    font-size: 18px;
+    color: black;
+}
+
+.input-recherche {
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+    width: 220px;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2; 
+}
+
+.bouton-recherche {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.bouton-recherche:hover {
+    background-color: #0050d4;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
