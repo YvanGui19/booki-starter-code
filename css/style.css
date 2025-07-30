@@ -229,6 +229,8 @@ h3 {
 .hebergement-cards .card {
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
+    gap: 4px;
 }
 
 .hebergement-cards img {
@@ -236,6 +238,24 @@ h3 {
     height: 136px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-bottom: 5px;
+}
+
+.card-content h3 {
+    margin: 0px;
+}
+
+.hebergement-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 15px;
+    gap: 8px;
+}
+
+.hebergement-subtitle {
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 /*********** Populaires ***********/
