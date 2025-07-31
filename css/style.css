@@ -96,11 +96,9 @@ a {
 /** Recherche **/
 
 .container-recherche {
-    margin: 40px 0px;
-}
-
-.soustitre-h1 {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 .form-recherche {
@@ -109,7 +107,6 @@ a {
     width: fit-content;
     border-radius: 15px;
     overflow: hidden;
-    margin-top: 30px;
 }
 
 .icone-pin i {
@@ -150,7 +147,6 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 30px;
 }
 
 h3 {
@@ -181,7 +177,6 @@ h3 {
 .container-info {
     display: flex;
     align-items: center;
-    margin-top: 30px;
     gap: 10px;
 }
 
