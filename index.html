@@ -34,7 +34,7 @@
                     <div class="icone-pin">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <input class="input-recherche" type="text" placeholder="Votre prochaine destination" name="destination">
+                    <input class="input-recherche" type="text" placeholder="Votre prochaine destination" name="destination" value="Marseille, Provence">
                     <button class="bouton-recherche" type="submit">Rechercher</button>
                 </form>
                 
@@ -66,6 +66,7 @@
         </header>
         <main>
             <div class="hebergements-and-populaires">
+                <!--*************************   HÉBERGEMENTS   *************************-->
                 <section class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergement-cards">
@@ -172,8 +173,11 @@
                             </article>
                         </a>
                     </div>
-                    <h2 class="hebergement-subtitle"><a href="#">Afficher plus</a></h2>
+                    <h3 class="hebergement-subtitle"><a href="#">Afficher plus</a></h3>
                 </section>
+
+                <!--*************************   HÉBERGEMENTS POPULAIRES   *************************-->
+
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -240,6 +244,39 @@
                     </div>
                 </section>
             </div>
+
+            <!--*************************   ACTIVITÉS À MARSEILLE   *************************-->
+
+            <section class="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+                <div class="activites-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/vieux-port.jpg" alt="Image d'une activité au vieux-port">
+                            <h3 class="card-title">Vieux-Port</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/fort_pomegues.jpg" alt="Image d'une activité au fort de pomègues">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/parc_calanques.jpg" alt="Image d'une activité au parc national des calanques">
+                            <h3 class="card-title">Parce national des Calanques</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/notre_dame_garde.jpg" alt="Image d'une activité a notre dame de la garde">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
+            </section>
+
         </main>
         <footer></footer>
     </div>
