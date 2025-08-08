@@ -76,12 +76,13 @@ a {
 #menu {
     display: flex;
     list-style: none;
+    padding-top: 15px;
     gap: 68px;
 }
 
 #menu a {
     color: #090021;
-    padding-top: 14px;
+    padding-top: 13px;
     font-size: 16px;
 }
 
@@ -92,7 +93,7 @@ a {
 
 .logo-Booki {
     height: 19px;
-    padding: 40px 0px 42px 0px;
+    padding: 30px 0px 32px 0px;
 }
 
 /** Recherche **/
