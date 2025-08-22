@@ -14,7 +14,9 @@
     color: var(--main-color);
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     display: flex;
@@ -29,6 +31,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 a {
@@ -127,6 +135,7 @@ a {
     width: 220px;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2; 
+    font-weight: 700;
 }
 
 .bouton-recherche {
@@ -209,7 +218,7 @@ h3 {
 }
 
 /** Hebergements **/
-.hebergements {
+#hebergements {
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -261,7 +270,7 @@ h3 {
 }
 
 /** Populaires **/
-.populaires {
+#populaires {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -323,7 +332,7 @@ h3 {
 
 /*********** Activités ***********/
 
-.activites{
+#activites{
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -333,6 +342,7 @@ h3 {
 .activites-cards{
     display: flex;
     gap: 30px;
+    align-items: stretch;
 }
 
 .activites-cards a{
@@ -346,6 +356,7 @@ h3 {
     padding: 0px;
     outline: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .activites-cards .card:hover {
@@ -362,6 +373,9 @@ h3 {
 
 .activites-cards .card-title{
     padding: 20px 19px;
+    display: flex;
+    align-items: center;
+    height: 40px;
 }
 
 
@@ -398,14 +412,19 @@ footer {
 /*********** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /******   HÉBERGEMENTS & POPULAIRES  ********/
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
-    .hebergements {
+    /*   HÉBERGEMENTS   */
+
+    #hebergements {
         width: 100%;
     }
 
+
+    /*   POPULAIRES   */
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -428,6 +447,14 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+
+    /******   ACTIVITÉS   ********/
+    .activites-cards img {
+    width: auto;
+    height: 200px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
