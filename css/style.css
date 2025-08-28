@@ -31,6 +31,7 @@ html, body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     margin: 0 auto; 
     padding: 0 50px;
     box-sizing: border-box;
@@ -162,7 +163,7 @@ a {
     background-color: #0050d4;
 }
 
-.button-search-mobile{
+.button-search-mobile {
     display: none;
 }
 
@@ -210,14 +211,16 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    padding: 5px;
     border-radius: 50px;
     border: 1px solid #D9D9D9;
-    padding: 2px;
+    font-size: 11px;
+    box-sizing: border-box;
+    min-width: 24px;
+    min-height: 24px;
 }
 
-/*********** Hebergements And Populaires ***********/
+/*********** Hebergements et Populaires ***********/
 .accommodation-and-popular {
     display: flex;
     gap: 30px;
@@ -578,7 +581,10 @@ footer {
         font-size: 17px;
         font-weight: 700;
         border-radius: 15px;
-        filter: drop-shadow(0px 4px 12px rgba(0,0,0,0.25));
+    }
+
+    .button-search-mobile:hover {
+        background-color: #0050d4;
     }
 
     .button-search-mobile i {
@@ -656,7 +662,7 @@ footer {
 }
 
 
-/* Very Small devices (phones, less than 768px) */
+/* Very Small devices (phones, less than 375px) */
 @media (max-width: 375px) {
 
     .main-container {
